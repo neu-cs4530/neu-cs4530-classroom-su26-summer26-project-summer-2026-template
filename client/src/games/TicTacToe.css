@@ -1,0 +1,68 @@
+.ttt-board {
+  margin-top: 5vh;
+  margin-left: 2vw;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  background: #d1d5db;
+  border-radius: 0.5rem;
+}
+
+.ttt-row {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.ttt-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.25rem;
+  height: 4.25rem;
+  background: #f3f4f6;
+  border-radius: 0.375rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.ttt-mark-o {
+  color: #2563eb;
+}
+
+.ttt-mark-x {
+  color: #dc2626;
+}
+
+.ttt-cell.ttt-winner {
+  background: #dfdfe1;
+}
+
+.ttt-cell.ttt-winner .ttt-mark-o,
+.ttt-cell.ttt-winner .ttt-mark-x {
+  font-weight: 800;
+}
+
+.ttt-move-btn {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: transparent;
+  cursor: pointer;
+}
+
+.ttt-move-btn:hover:not(:disabled) {
+  color: #9ca3af;
+  background: #e5e7eb;
+}
+
+.ttt-move-btn:disabled {
+  cursor: default;
+}

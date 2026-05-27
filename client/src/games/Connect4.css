@@ -1,0 +1,66 @@
+.c4-board {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  background: #366bba;
+  border-radius: 0.5rem;
+  margin-left: 2vw;
+  margin-top: 5vh;
+}
+
+.c4-row {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.c4-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #f3f4f6;
+  border-radius: 50%;
+}
+
+.c4-cell.c4-winner {
+  background: #e5e7eb;
+  box-shadow: 0 0 0 0.2rem #facc15;
+}
+
+.c4-disc {
+  display: block;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+}
+
+.c4-red {
+  background: #dc2626;
+}
+
+.c4-yellow {
+  background: #eab308;
+}
+
+.c4-drop-btn {
+  all: unset;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.c4-drop-btn:hover:not(:disabled) {
+  background: #e5e7eb;
+}
+
+.c4-drop-btn:active:not(:disabled) {
+  background: #d1d5db;
+}
+
+.c4-drop-btn:disabled {
+  cursor: default;
+}
